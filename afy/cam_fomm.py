@@ -249,10 +249,11 @@ if __name__ == "__main__":
         # if not enable_vcam:
             # log("Virtual camera streaming will be disabled.")
 
-    cur_ava = 0    
+    cur_ava = 1   
     avatar = None
     change_avatar(predictor, avatars[cur_ava])
-    passthrough = False
+    passthrough = true
+    
 
     cv2.namedWindow('cam', cv2.WINDOW_GUI_NORMAL)
     cv2.moveWindow('cam', 500, 250)
